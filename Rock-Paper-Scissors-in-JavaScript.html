@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>*
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .container{
+            background-color: #cfddf9;
+            border: 2px solid black;
+            height: 90vh;
+            margin: 20px 20px;
+            padding: 10px 10px;
+        }
+
+        h1{
+            font-size: 40px;
+        }
+
+        .bot{
+            margin: 4px 8px;
+            font-size: 25px;
+            background-color: royalblue;
+            border: 2px solid black;
+            cursor: pointer;
+            transition: 0.5s ease;
+            text-transform: uppercase;
+        }
+
+        .bot:hover{
+            transform: scale(1.2);
+        }
+        img{
+            height: 45vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>Stone Paper scissors</h1>
+    <img src="rock.jpg" alt="">
+    <h3>select one:</h3>
+    <button class="bot" onclick=" userChoise = '⛰️stone';
+    let computerChoise;
+    let randomNumber = Math.random() * 3;
+    if(randomNumber >0 && randomNumber <=1){
+        computerChoise = '⛰️stone';
+    } else if( randomNumber >1 && randomNumber <=2){
+        computerChoise = '📄Paper';
+    } else {
+        computerChoise = '✄scissors';
+    }
+    let computerTake = (`Computer Choise is ${computerChoise}`);
+
+    if(computerChoise === '⛰️stone'){
+        result = 'tia😒';
+    } else if(computerChoise === '✄scissors'){
+        result = 'You win😀';
+    } else{
+        result = 'you loss☹️';
+    }
+
+    alert(`Your choise is ${userChoise}, ${computerTake}, ${result}`);
+
+
+
+    " >⛰️stone</button>
+
+
+    <button class="bot" onclick=" userChoise = '📄Paper';
+    let computerChoise;
+    let randomNumber = Math.random() * 3;
+    if(randomNumber >0 && randomNumber <=1){
+        computerChoise = '⛰️stone';
+    } else if( randomNumber >1 && randomNumber <=2){
+        computerChoise = '📄Paper';
+    } else {
+        computerChoise = '✄scissors';
+    }
+    let computerTake = (`Computer Choise is ${computerChoise}`);
+
+    if(computerChoise === '📄Paper'){
+        result = 'tia😒';
+    } else if(computerChoise === '⛰️stone'){
+        result = 'You win😀';
+    } else{
+        result = 'you loss☹️';
+    }
+
+    alert(`Your choise is ${userChoise}, ${computerTake}, ${result}`);
+     ">📄paper</button>
+    <button class="bot" onclick="  userChoise = '✄scissors';
+    let computerChoise;
+    let randomNumber = Math.random() * 3;
+    if(randomNumber >0 && randomNumber <=1){
+        computerChoise = '⛰️stone';
+    } else if( randomNumber >1 && randomNumber <=2){
+        computerChoise = '📄Paper';
+    } else {
+        computerChoise = '✄scissors';
+    }
+    let computerTake = (`Computer Choise is ${computerChoise}`);
+
+    if(computerChoise === '✄scissors'){
+        result = 'tia😒';
+    } else if(computerChoise === '📄Paper'){
+        result = 'You win😀';
+    } else{
+        result = 'you loss☹️';
+    }
+
+    alert(`Your choise is ${userChoise}, ${computerTake}, ${result}`);
+      ">✄scissors</button>
+    </div>
+</body>
+</html>
